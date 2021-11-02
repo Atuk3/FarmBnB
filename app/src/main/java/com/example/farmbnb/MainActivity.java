@@ -18,16 +18,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("Log In");
     }
     public boolean checkIfFieldsAreCorrect()
     {
         EditText pnme= findViewById(R.id.PersonName);
-        String pname= ((EditText)findViewById(R.id.PersonName)).getText().toString();
+        String pname= pnme.getText().toString();
         EditText psd= findViewById(R.id.PersonPassword);
-        String passwd= ((EditText)findViewById(R.id.PersonPassword)).getText().toString();
+        String passwd= psd.getText().toString();
         EditText agee= findViewById(R.id.age);
-        String personAge= ((EditText)findViewById(R.id.age)).getText().toString();
+        String personAge= agee.getText().toString();
         int pAge=Integer.parseInt(personAge);
+
 
         if(!pname.equalsIgnoreCase("admin"))
         {
@@ -63,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
         if(checkIfFieldsAreCorrect())
         {
 
-            Intent intent= new Intent(this, Explore.class);
+
+           Intent intent= new Intent(this, Explore.class);
             startActivity(intent);
         }
 

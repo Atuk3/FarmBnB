@@ -4,7 +4,11 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="log_in">Log In</string>
-    <string name="age">Age</string>
+
+    <string name="age_text">Please confirm your age</string>
+    <string name="age">0</string>
+    <string name="welcome_greeting">Hi there!!</string>
+    <string name="welcome_greeting3">The place to rent the most affordable homes away from home</string>
 
 
 </resources>
