@@ -5,10 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-
-
-import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,17 +14,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("Log In");
+
     }
-    public boolean checkIfFieldsAreCorrect()
+   /* public boolean checkIfFieldsAreCorrect()
     {
         EditText pnme= findViewById(R.id.PersonName);
         String pname= pnme.getText().toString();
         EditText psd= findViewById(R.id.PersonPassword);
         String passwd= psd.getText().toString();
-        EditText agee= findViewById(R.id.age);
-        String personAge= agee.getText().toString();
-        int pAge=Integer.parseInt(personAge);
+      //  EditText agee= findViewById(R.id.age);
+      //  String personAge= agee.getText().toString();
+       // int pAge=Integer.parseInt(personAge);
 
 
         if(!pname.equalsIgnoreCase("admin"))
@@ -58,20 +54,21 @@ public class MainActivity extends AppCompatActivity {
        return true;
 
 
-    }
+  */
 
-    public void validate(View signup)
+    public void signUp(View signup)
     {
-        if(checkIfFieldsAreCorrect())
-        {
+       // if(checkIfFieldsAreCorrect()) {
+        //}
 
 
-           Intent intent= new Intent(this, Explore.class);
+           Intent intent= new Intent(this, SignUp.class);
             startActivity(intent);
-        }
+
 
 
 
 
     }
+
 }
