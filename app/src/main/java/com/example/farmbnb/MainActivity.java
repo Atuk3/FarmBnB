@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -60,15 +62,21 @@ public class MainActivity extends AppCompatActivity {
     {
        // if(checkIfFieldsAreCorrect()) {
         //}
-
-
-           Intent intent= new Intent(this, SignUp.class);
+            Intent intent= new Intent(this, SignUp.class);
             startActivity(intent);
-
-
-
-
-
     }
+    public void Adminvalidate(View adminval)
+    {
+        Intent intent= new Intent(this, AdminLogin.class);
+        startActivity(intent);
+    }
+    public void Validate(View val)
+    {
+        Snackbar.make(val,"Login successful", Snackbar.LENGTH_SHORT).show();
+
+        //Intent intent= new Intent(this, AdminLogin.class);
+        //startActivity(intent);
+    }
+
 
 }

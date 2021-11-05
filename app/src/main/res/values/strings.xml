@@ -18,6 +18,14 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="admin_log_in">Log In</string>
+    <string name="admin_password">Password</string>
+    <string name="admin_username">Username</string>
+    <string name="text2">Login Now</string>
+    <string name="text3">Please login to continue</string>
+    <string name="main_sign_up">Sign Up</string>
+    <string name="main_admin">Admin</string>
+    <string name="main_text">Your firstname is your username</string>
 
 
 </resources>
